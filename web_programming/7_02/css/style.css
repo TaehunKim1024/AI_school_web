@@ -1,0 +1,220 @@
+/*html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.box-model {
+	box-sizing: border-box;
+
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border: solid 10px red;
+
+	margin: 100px 0 0 100px;top right bottom left
+	padding: 100px 0 0 100px;
+
+	margin-left: 100px;
+	margin-top: 100px;
+	margin-right: ;
+	margin-bottom: ;
+
+	padding-left: 100px;
+	padding-top: 100px;
+	padding-right: ;
+	padding-bottom: ;
+
+}*/
+
+/*.margin-one {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+
+	margin-bottom: 100px;
+}
+.margin-two {
+	width: 100%;
+	height: 100px;
+	background-color: blue;
+
+	margin-top: 100px;
+}
+*/
+
+/*형제간의 마진 병합*/
+
+.margin-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.margin-child {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	margin-top: 100px;
+}
+
+/*부모자식간의 마진 병합*/
+
+
+/*h1 {
+
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+
+	margin-top: 100px;
+}
+
+span {
+
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+
+	margin-top: 100px;
+}
+*/
+
+/*.inline-block {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.inline, .inline-block, img {
+	vertical-align: middle;
+}*/
+
+
+.static-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.static-child {
+	/*position: static;*/
+
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	margin-top: 100px;
+	/*top: 100px;*/
+}
+
+/*position: static 은 2차원에 속함.(?) 따로 설정하지 않아도 기본.*/
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: gray;
+}
+
+.fixed-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.fixed-child {
+	position: fixed;
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	top: 100px;
+	left: 100px;
+}
+
+.box2 {
+	width: 300px;
+	height: 2000px;
+	background-color: green;
+}
+
+/*부모자식간의 마진병합이 position: fixed 상태에선 일어나지 않는다.
+화면에 고정되는 상태.
+top, left, bottom, right 도 사용 가능하나 브라우저 왼쪽 상단을 기준으로 좌표가 잡힌다.
+부모 프레임에도 영향을 받지 않음. 3차원 영역에 속하는 포지션이다.*/
+
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: gray;
+}
+
+.relative-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.relative-child {
+	position: relative;
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	
+
+	/*margin-top: 100px;*/
+	top: 100px;
+}
+
+/*position: relative 마진 병합이 일어난다.
+top, left, bottom, right 도 사용 가능하나 최초위치를 기준으로 좌표가 잡힌다.
+자식 프레임이 부모 프레임에 영향을 준다. 2차원+3차원 영역에 속하는 포지션이다.*/
+
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: gray;
+}
+
+.absolute-parent {
+
+	position: absolute;
+
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.absolute-child {
+	position: absolute;
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	
+	/*margin-top: 100px;*/
+	/*top: 100px;*/
+}
+
+/*position: absolute 에서는 부모 자식간의 마진 병합이 일어나지 않음. 
+top, left, bottom, right 도 사용 가능하나 부모 프레임의 특징에 따라 달라짐.
+2차원적일 때는 브라우저를 기준, 3차원 특성을 지닐땐 부모 프레임을 기준으로 잡는다.
+즉, static일땐 브라우저를 기준, fixed, relative, absolute는 부모프레임을 기준으로 함.
+자식 프레임이 부모 프레임에 영향을 줄수없다. 3차원 영역에 속하는 포지션이다.*/
+
+
+
+
+
+
+
+
+
+
