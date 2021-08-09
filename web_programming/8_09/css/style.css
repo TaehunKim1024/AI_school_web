@@ -4372,7 +4372,7 @@ footer address span{
 
 #game-main .left {
 	width: 900px;
-	height: 2000px;
+/* 	height: 2000px; */
 	background-color: yellow;
 }
 
@@ -4749,7 +4749,7 @@ footer address span{
 
 #game-main .right {
 	width: 358px;
-	height: 2000px;
+/* 	height: 2000px; */
 	background-color: grey;
 }
 
